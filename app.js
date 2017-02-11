@@ -28,7 +28,7 @@ function Store(name, min, max, avg){
     };
   this.storeLabel = function(){
     var el = document.getElementById('name');
-    var tableRowElement = document.createElement('td');
+    var tableRowElement = document.createElement('tr');
     var updateTableRow = el.appendChild(tableRowElement);
     updateTableRow.textContent = this.name;
   }
@@ -37,12 +37,31 @@ function Store(name, min, max, avg){
     console.log(outputArr);
     for(i=0; i<outputArr.length; i++){
       var el = document.getElementById('index' + i);
-      var tableRowElement = document.createElement('td');
+      var tableRowElement = document.createElement('tr');
       var updateTableRow = el.appendChild(tableRowElement);
       updateTableRow.textContent = outputArr[i];
     }
   }
 }
+var pikePlace = new Store ("Pike Place", 17, 88, 5.2);
+pikePlace.storeLabel();
+pikePlace.renderTable();
+
+var seaTacAirport = new Store ("SeaTac Airport", 6, 24, 1.2);
+seaTacAirport.storeLabel();
+seaTacAirport.renderTable();
+
+var southcenter = new Store ("Southcenter", 11, 38, 1.9);
+southcenter.storeLabel();
+southcenter.renderTable();
+
+var bellevueSquare = new Store ("Bellevue Square", 20, 48, 3.3);
+bellevueSquare.storeLabel();
+bellevueSquare.renderTable();
+
+var alki = new Store ("Alki", 3, 24, 2.6);
+alki.storeLabel();
+alki.renderTable();
 
 // var pikePlace = {
 //   min: 17,
