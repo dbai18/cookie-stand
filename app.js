@@ -12,7 +12,6 @@ var pikePlace = {
       var arrayValue = this.randomOutput();
       cookiesArray.push(arrayValue);
     }
-    console.log(cookiesArray);
     return cookiesArray;
   },
   randomOutputSum: function(){
@@ -21,14 +20,12 @@ var pikePlace = {
     for(i = 0; i < arraySum.length; i++){
       sum += arraySum[i];
     }
-    console.log(sum);
     arraySum.push(sum);
     console.log(arraySum);
     return arraySum;
   },
   renderManipulation: function(){
     var arrSum = this.randomOutputSum();
-    console.log(arrSum);
     var x = document.getElementById('pike_place');
     for(i=0;i<9;i++){
       var el = document.createElement('li');
@@ -52,7 +49,6 @@ var seaTacAirport = {
       var arrayValue = this.randomOutput();
       cookiesArray.push(arrayValue);
     }
-    console.log(cookiesArray);
     return cookiesArray;
   },
   randomOutputSum: function(){
@@ -61,14 +57,12 @@ var seaTacAirport = {
     for(i = 0; i < arraySum.length; i++){
       sum += arraySum[i];
     }
-    console.log(sum);
     arraySum.push(sum);
     console.log(arraySum);
     return arraySum;
   },
   renderManipulation: function(){
     var arrSum = this.randomOutputSum();
-    console.log(arrSum);
     var x = document.getElementById('seatac_airport');
     for(i=0;i<9;i++){
       var el = document.createElement('li');
@@ -92,7 +86,6 @@ var southcenter = {
       var arrayValue = this.randomOutput();
       cookiesArray.push(arrayValue);
     }
-    console.log(cookiesArray);
     return cookiesArray;
   },
   randomOutputSum: function(){
@@ -101,14 +94,12 @@ var southcenter = {
     for(i = 0; i < arraySum.length; i++){
       sum += arraySum[i];
     }
-    console.log(sum);
     arraySum.push(sum);
     console.log(arraySum);
     return arraySum;
   },
   renderManipulation: function(){
     var arrSum = this.randomOutputSum();
-    console.log(arrSum);
     var x = document.getElementById('southcenter');
     for(i=0;i<9;i++){
       var el = document.createElement('li');
@@ -132,7 +123,6 @@ var bellevueSquare = {
       var arrayValue = this.randomOutput();
       cookiesArray.push(arrayValue);
     }
-    console.log(cookiesArray);
     return cookiesArray;
   },
   randomOutputSum: function(){
@@ -141,14 +131,12 @@ var bellevueSquare = {
     for(i = 0; i < arraySum.length; i++){
       sum += arraySum[i];
     }
-    console.log(sum);
     arraySum.push(sum);
     console.log(arraySum);
     return arraySum;
   },
   renderManipulation: function(){
     var arrSum = this.randomOutputSum();
-    console.log(arrSum);
     var x = document.getElementById('bellevue_square');
     for(i=0;i<9;i++){
       var el = document.createElement('li');
@@ -172,7 +160,6 @@ var alki = {
       var arrayValue = this.randomOutput();
       cookiesArray.push(arrayValue);
     }
-    console.log(cookiesArray);
     return cookiesArray;
   },
   randomOutputSum: function(){
@@ -181,14 +168,12 @@ var alki = {
     for(i = 0; i < arraySum.length; i++){
       sum += arraySum[i];
     }
-    console.log(sum);
     arraySum.push(sum);
     console.log(arraySum);
     return arraySum;
   },
   renderManipulation: function(){
     var arrSum = this.randomOutputSum();
-    console.log(arrSum);
     var x = document.getElementById('alki');
     for(i=0;i<9;i++){
       var el = document.createElement('li');
