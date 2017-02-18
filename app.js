@@ -1,7 +1,7 @@
 // var timeLabelsArray = ['10AM: ','11AM: ','12PM: ', '1PM: ', '2PM: ', '3PM: ', '4PM: ', '5PM: ', 'SUM: ']
 
-function Store(name, min, max, avg){
-  this.name = name;
+function Store(storeName, min, max, avg){
+  this.storeName = storeName;
   this.min = min;
   this.max = max;
   this.avg = avg;
@@ -32,7 +32,7 @@ Store.prototype.storeLabel = function(){
   var el = document.getElementById('name');
   var tableRowElement = document.createElement('tr');
   var updateTableRow = el.appendChild(tableRowElement);
-  updateTableRow.textContent = this.name;
+  updateTableRow.textContent = this.storeName;
 };
 Store.prototype.renderTable = function(){
   var outputArr = this.randomOutputSum();
@@ -65,3 +65,20 @@ bellevueSquare.callMethods();
 
 var alki = new Store ('Alki', 3, 24, 2.6);
 alki.callMethods();
+
+function storeFormSubmit(event) {
+  event.preventDefault();
+  console.log(event);
+  var storeName = event.target.storeName.value;
+  var min = event.target.min.value;
+  var max = event.target.max.value;
+  var avg = event.target.avg.value;
+  var newStore = new Store(storeName, min, max, avg);
+  newStore.callMethods();
+  event.target.storeName.value = null;
+  event.target.min.value = null;
+  event.target.max.value = null;
+  event.target.avg.value = null;
+};
+var submitForm = document.getElementById('input_form');
+submitForm.addEventListener('submit', storeFormSubmit);
